@@ -18,9 +18,17 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Some approachs that i use in this project
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+-Standalone components
+-Smart vs Dumbs components
+-Rxjs
+-NgMocks
+-Bootstrap
+-Onpush Strategy
+-Async pipe
+-Lazy loading modules
+-Unit test
 
 ## Further help
 
