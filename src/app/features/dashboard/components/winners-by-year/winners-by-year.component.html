@@ -1,0 +1,29 @@
+<h5>List movie winners by year</h5>
+<div class="input-group my-3">
+  <input
+    type="number"
+    [(ngModel)]="selectedYear"
+    class="form-control"
+    placeholder="Search by year"
+  />
+  <button class="btn btn-primary" (click)="searchWinnerByYear()">
+    <i class="bi bi-search"></i>
+  </button>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Year</th>
+      <th scope="col">Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of winnerByYear$ | async">
+      <td>{{ data.id }}</td>
+      <td>{{ data.year }}</td>
+      <td>{{ data.title }}</td>
+    </tr>
+  </tbody>
+</table>

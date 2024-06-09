@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-lg-6 mb-2">
+    <app-years-with-multiple-winner
+      [data]="yearsWithMultipleWinner$ | async"
+    ></app-years-with-multiple-winner>
+  </div>
+  <div class="col-lg-6 mb-2">
+    <app-top-studios [data]="topThreeStudios$ | async"></app-top-studios>
+  </div>
+  <div class="col-lg-6 mb-2">
+    <app-producers-win-intervals
+      [data]="producersInterval$ | async"
+    ></app-producers-win-intervals>
+  </div>
+  <div class="col-lg-6 mb-2">
+    <app-winners-by-year></app-winners-by-year>
+  </div>
+</div>
