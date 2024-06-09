@@ -20,14 +20,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Some approachs that i use in this project
 
--Standalone components
--Smart vs Dumbs components
--Rxjs
--NgMocks
--Bootstrap
--Onpush Strategy
--Async pipe
--Lazy loading modules
+-Standalone components  
+-Smart vs Dumbs components  
+-Rxjs  
+-NgMocks  
+-Bootstrap  
+-Onpush Strategy  
+-Async pipe  
+-Lazy loading modules  
 -Unit test
 
 ## Further help
