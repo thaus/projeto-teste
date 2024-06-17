@@ -1,0 +1,27 @@
+<table class="table table-bordered table-striped">
+  <thead class="table-light">
+    <tr>
+      <th>Producer</th>
+      <th>Interval</th>
+      <th>Previous Year</th>
+      <th>Following Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-content *ngIf="data; else loading">
+      <tr *ngFor="let producer of data">
+        <td>{{ producer.producer }}</td>
+        <td>{{ producer.interval }}</td>
+        <td>{{ producer.previousWin }}</td>
+        <td>{{ producer.followingWin }}</td>
+      </tr>
+    </ng-content>
+    <ng-template #loading>
+      <tr>
+        <td colspan="4">
+          <app-loader></app-loader>
+        </td>
+      </tr>
+    </ng-template>
+  </tbody>
+</table>
